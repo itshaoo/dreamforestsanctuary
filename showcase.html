@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Dream Forest Sanctuary</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body class="showcase">
+    <nav>
+        <ul>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="showcase.html" class="active">Showcase</a></li>
+            <li><a href="garden.html">Healing Garden</a></li>
+        </ul>
+    </nav>
+
+    <div>
+        <h2>Forest Winds</h2>
+        <table id="windTable">
+            <tr>
+                <th>Wind</th>
+                <th>Speed</th>
+                <th>Symbol</th>
+            </tr>
+            <tr>
+                <td>Morning Breeze</td>
+                <td>10 km/h</td>
+                <td>🌤</td>
+            </tr>
+            <tr>
+                <td>Twilight Gust</td>
+                <td>25 km/h</td>
+                <td>🌙</td>
+            </tr>
+            <tr>
+                <td>Dream Gale</td>
+                <td>40 km/h</td>
+                <td>✨</td>
+            </tr>
+        </table>
+
+        <div class="controls">
+            <h4>Change The Table Width</h4>
+            <div class="button">
+                <button onclick="changeWidth(200)">200px</button>
+                <button onclick="changeWidth(500)">500px</button>
+            </div>
+        </div>
+
+        <div class="controls">
+            <h4>Change The Border and the Spacing Width</h4>
+            <div class="button">
+                <button onclick="changeBorder(1)">1px</button>
+                <button onclick="changeBorder(10)">10px</button>
+                <button onclick="changeBorder(20)">20px</button>
+            </div>
+        </div>
+
+        <div class="controls">
+            <h4>Change The Table Color</h4>
+            <div class="button">
+                <span class="color-btn" style="background-color: #d0e9d0;" onclick="changeColor('#d0e9d0')"></span>
+                <span class="color-btn" style="background-color: #cbe3ed;" onclick="changeColor('#cbe3ed')"></span>
+                <span class="color-btn" style="background-color: #e2d2eb;" onclick="changeColor('#e2d2eb')"></span>
+                <span class="color-btn" style="background-color: #ecd6b8;" onclick="changeColor('#ecd6b8')"></span>
+            </div>
+        </div>
+
+        <div class="controls">
+            <button onclick="resetTable()">Reset</button>
+        </div>
+    </div>
+</body>
+<script src="script.js"></script>
+
+</html>

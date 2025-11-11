@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Dream Forest Sanctuary</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body class="gallery">
+  <nav>
+    <ul>
+      <li><a href="home.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="gallery.html" class="active">Gallery</a></li>
+      <li><a href="showcase.html">Showcase</a></li>
+      <li><a href="garden.html">Healing Garden</a></li>
+    </ul>
+  </nav>
+
+  <div>
+    <h2>Feel the Energy of Fire</h2>
+
+    <div class="image-hover">
+      <img src="images/fire_day.png" class="base" alt="Fire Base" />
+      <img src="images/fire_glow.png" class="overlay" alt="Fire Glow" usemap="#firemap" />
+      <div class="caption">
+        <p>Feel the warmth of<br>transformation</p>
+      </div>
+    </div>
+
+    <map name="firemap">
+      <area shape="poly" coords="235, 83, 147, 137, 137, 245, 176, 301, 213, 282, 254, 301, 296, 224, 286, 155"
+        href="spirit.html" alt="Fire Spirit" />
+    </map>
+  </div>
+
+  <h2>Dream Sky Gallery</h2>
+  <div class="polaroid">
+    <img id="photo" src="images/sky1.jpg" alt="Sky" />
+    <p id="counter">Image 1 of 5</p>
+    <button onclick="prevImage()">Previous</button>
+    <button onclick="nextImage()">Next</button>
+  </div>
+</body>
+<script src="script.js">showImage();</script>
+
+</html>
